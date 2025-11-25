@@ -7,7 +7,8 @@ import { Tarea } from '../interfaces/tarea';
 export class TaskManager {
   private tasks: Tarea[] = [];
   constructor(){
-    this.tasks = localStorage.getItem('tasks')? JSON.parse(localStorage.getItem('task')!):[];
+    this.tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')!):[];
+    console.log(this.tasks);
   }
   public addTask(task: Tarea): void {
     this.tasks.push(task);

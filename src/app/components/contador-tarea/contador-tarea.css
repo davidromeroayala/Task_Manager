@@ -1,0 +1,43 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contador {
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .contador h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .tareas {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .tarea {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .hechas {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .pendientes {
+      background: #FF5722;
+      color: white;
+    }
