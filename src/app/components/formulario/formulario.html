@@ -1,0 +1,40 @@
+<content>
+
+  <!-- Formulario -->
+  <main class="card">
+    
+    <h1>Nueva tarea</h1>
+    <form id="formTarea">
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input [(ngModel)]=tarea.nombre [ngModelOptions]="{standalone:true}" id="nombre" name="nombre" type="text" required />
+      </div>
+      <div class="field">
+        <label for="fecha">Fecha</label>
+        <input [(ngModel)]=tarea.fecha [ngModelOptions]="{standalone:true}" id="fecha" name="fecha" type="date" required />
+      </div>
+      <div class="field">
+        <label for="descripcion">Descripción</label>
+        <textarea [(ngModel)]=tarea.descripcion [ngModelOptions]="{standalone:true}" id="descripcion" name="descripcion"></textarea>
+      </div>
+      <div class="field">
+        <span>Pendiente</span>
+        <div class="toggle">
+          <label class="switch">
+            <input  [(ngModel)]=tarea.pendiente [ngModelOptions]="{standalone:true}" id="pendiente" name="pendiente" type="checkbox" />
+            <span class="knob"></span>
+          </label>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="reset" class="btn">Limpiar</button>
+        <button (click)="createTask()" class="btn primary">Guardar</button>
+      </div>
+    </form>
+</main>
+</content>
+
+ 
+
+  
+

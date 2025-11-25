@@ -1,0 +1,23 @@
+ <content>
+ <!-- Listado -->
+  <section class="listado">
+    <h2>Listado de tareas</h2>
+    <table>
+      <tr>
+        <th>nombre</th>
+        <th>descripcion</th>
+        <th>fecha</th>
+        <th>pendiente</th>
+      </tr>
+      @for (tarea of taskManager.getTasks(); track tarea.nombre){
+        <tr>
+          <td>{{ tarea.nombre }}</td>
+          <td>{{ tarea.descripcion }}</td>
+          <td>{{ tarea.fecha | date:'dd-MM-yyyy'}}</td>
+          <td>{{ tarea.pendiente ? 'si': 'no' }}</td>
+        </tr>
+      }
+      
+    </table>
+  </section>
+</content>
